@@ -3,10 +3,20 @@
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+let lastName = "Doe";
 
+function getMarried(gotMarried, name) {
+  if (gotMarried === true) {
+    let lastName = name;
+    console.log(`I got married my new last name is ${lastName}`);
+  } else {
+    console.log(`I am not married my last name is ${lastName}`);
+  }
+}
+
+getMarried(true, "Negley");
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
-
 
 // ==== Challenge 2: Implement a "counter maker" function ====
 const counterMaker = () => {
